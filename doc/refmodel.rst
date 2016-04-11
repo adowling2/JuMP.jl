@@ -40,7 +40,7 @@ Methods
 * ``MathProgBase.numlinconstr(m::Model)`` - returns the number of linear constraints associated with the ``Model m``.
 * ``MathProgBase.numquadconstr(m::Model)`` - returns the number of quadratic constraints associated with the ``Model m``.
 * ``MathProgBase.numconstr(m::Model)`` - returns the total number of constraints associated with the ``Model m``.
-* ``getsolvetime(m::Model)`` - returns the solve time reported by the solver if it is implemented.
+* ``MathProgBase.getsolvetime(m::Model)`` - returns the solve time reported by the solver if it is implemented.
 * ``getnodecount(m::Model)`` - returns the number of explored branch-and-bound nodes, if it is implemented.
 * ``getobjbound(m::Model)`` - returns the best known bound on the optimal objective value. This is used, for example, when a branch-and-bound method is stopped before finishing.
 * ``getobjgap(m::Model)`` - returns the final relative optimality gap as optimization terminated. That is, it returns :math:`\frac{|b-f|}{|f|}`, where :math:`b` is the best bound and :math:`f` is the best feasible objective value.
